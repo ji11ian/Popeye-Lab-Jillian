@@ -2,6 +2,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class PopeyeTester {
+    @Test
     public void testRegularMiles() {
         double nauticalMiles = 100;
         double expectedRegularMiles = 115.08;
@@ -9,6 +10,7 @@ public class PopeyeTester {
         assertEquals(expectedRegularMiles, actualRegularMiles, 0.01);
     }
     
+    @Test
     public void testTopSpeedTime() {
         double nauticalMiles = 100;
         double topSpeed = 10;
@@ -17,6 +19,7 @@ public class PopeyeTester {
         assertEquals(expectedTopSpeedTime, actualTopSpeedTime, 0.01);
     }
     
+    @Test
     public void testAverageSpeedTime() {
         double nauticalMiles = 100;
         double averageSpeed = 5;
